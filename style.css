@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #f2f4f7;
+  color: #1f2933;
+  line-height: 1.6;
+}
+
+/* PERFIL */
+.perfil {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.perfil img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.perfil h1 {
+  font-size: 26px;
+}
+
+.perfil p {
+  opacity: 0.9;
+}
+
+/* SEÇÕES */
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #0f2027;
+}
+
+/* HABILIDADES */
+.lista-habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.lista-habilidades span {
+  background: #203a43;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* CARDS */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* CONTATO */
+.contato p {
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+  background: #0f2027;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ANIMAÇÕES */
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  .perfil h1 {
+    font-size: 22px;
+  }
+
+  section {
+    padding: 30px 15px;
+  }
+}
+
+/* CERTIFICADOS */
+.instituicao {
+  display: block;
+  margin-top: 8px;
+  font-size: 16px;
+  color: #000000;
+  font-style: italic;
+}
+
+/* FORMAÇÃO EM DESTAQUE */
+.formacao.destaque {
+  background: #e9eef3;
+  border-left: 5px solid #203a43;
+}
+
+.formacao.destaque h2 {
+  color: #0f2027;
+}
